@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2021, 5:46:13 PM
+    Author     : ADMIN
+*/
+@import url(//fonts.googleapis.com/css?family=Roboto:400,600);
+
+*{
+    font: 13px/1.7 "Roboto","Proxima Nova Rg","Source Sans Pro","Droid Sans",Arial,Helvetica, sans-serif;
+    color:#333333;
+    margin:0px;
+    padding:0px;
+}
+
+sidebar.box table a:link {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+sidebar.box table a:visited {
+    color: #999999;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+sidebar.box table a:active,
+sidebar.box table a:hover {
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+sidebar.box table {
+    width: 1200px;
+    margin:10px auto;
+    box-shadow: none;
+    border:1px solid #E6E6E6;
+    padding:0;
+    background-color:#FFFFFF;
+    box-sizing: border-box;
+    display: table;
+}
+
+sidebar.box table th {
+    text-align:center;
+    background: #34495e;
+    color:#FFF;
+    text-shadow:0px 01px 0px #000;
+    font-size:15px;
+    height: 42px;
+    border-radius: 0 !important;
+    border-left: 1px solid whitesmoke;
+    box-sizing:border-box;
+}
+
+sidebar.box table th:first-child {
+    border-left: 0;
+}
+
+
+sidebar.box table tr {
+    text-align: center;
+}
+
+sidebar.box table td:first-child {
+    box-sizing: border-box;
+    border-left: 0;
+}
+
+sidebar.box table td {
+    padding: 9px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    background: white;
+}
+
+sidebar.box table tr:nth-child(odd) td {
+    background: #fcfaf5;
+}
+
+sidebar.box table tr:last-child td {
+    border-bottom: 0;
+}
+
+sidebar.box table tr:hover td {
+    background: #fffcf5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}

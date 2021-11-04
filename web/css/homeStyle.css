@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 15, 2021, 3:50:00 PM
+    Author     : ADMIN
+*/
+.container{
+    display: grid;
+    height: 100vh;
+
+    gap: 24px;
+
+    grid-template-rows: auto auto 1fr auto auto auto;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+body{
+    background: #031321;
+    font-family: consolas;
+}
+
+h1{
+    color: white;
+}
+
+.header p{
+    color: white;
+}
+
+.header{
+    grid-area: header;
+    display:inline-block;
+}
+
+.sidebar img{
+    padding-left: 2px;
+    padding-right: 2px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #bababa;
+    height: 39px;
+    width: 265%;
+    border-radius: 4px;
+}
+
+label.logo{
+    margin-left: 10px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.navigation{
+    grid-area: nav;
+    padding-bottom: 20px;
+    padding-left: 75%;
+    margin-bottom: 20px;
+    background-color: #bababa;
+    border-radius: 4px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    width: 100%;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.detail{
+    font-weight: bold;
+    color: #b7b7cc;
+}
+
+.contact{
+    color: white;
+}
+
+.phone{
+    font-weight: bold;
+    color: white;
+}
+
+.last{
+    color: white;
+}
+
+.mobile strong{
+    font-weight: 700;
+}
+
+.little{
+    display:inline-block;
+}
+
+.mini{
+    display:inline-block;
+    float:right;
+    margin-top: 1px;
+}
+
+.mini th{
+    padding-left:1px;
+}
+
+.title::before{
+    filter: blur(25px);
+    transform: translateY(30px) scale(0.9);
+}
+
+.title:nth-child(1),
+.title:nth-child(1)::before{
+    background-position: 0 -100px;
+    background: linear-gradient(135deg, #24ff72, #2196f3);
+}
+
+.title:nth-child(2),
+.titlt:nth-child(2)::before{
+    background-position: 0 -100px;
+    background: linear-gradient(135deg, #f403d1, #64b5f6);
+}
+
+table th:first-child {
+    padding-right: 200px;
+}
+
+.box h3{
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -34px;
+    padding: 0 15px;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+}
+
+.box th{
+    width: 55%;
+    font-size: 25px;
+}
+
+div.topAthletes {
+    width: 400px;
+    float: left;
+    margin-right: 15px;
+    padding-right: 0;
+}
+
+.box, .aboutPage {
+    padding: 15px 17px;
+    margin: 0px 0px 50px;
+    border-radius: 0 5px 5px 5px;
+    background: #fff;
+    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.7) -moz-linear-gradient(top,rgba(255,255,255,1),rgba(255,255,255,0.1));
+    background: rgba(255,255,255,0.7) -o-linear-gradient(top,rgba(255,255,255,1),rgba(255,255,255,0.5));
+    background: rgba(255,255,255,0.7) -webkit-linear-gradient(top bottom,rgba(255,255,255,1),rgba(255,255,255,0.5));
+    position: relative;
+    color: #234166;
+    box-shadow: 0 0 5px #c4cacc;
+}
+
+@media (min-width: 720px) {
+    .container{
+        grid-template-areas: "header header header"
+            "nav nav nav"
+            "sidebar main main"
+            "footer footer footer";
+    }
+}
+
+@media (min-width: 1020px) {
+    .container{
+
+    }
+}
+
+.label-success {
+    background-color: #74ca74;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+a{
+    text-decoration: none;
+    color: #6367e4;
+}
+
+.sidebar li{
+    font-size: 15px;
+}
+
+.mini img{
+    border-radius: 6px;
+    border-color: #031321;
+}
+
+.mini table th,td{
+    width: 170px;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.sidebar table td{
+    padding: 0px 50px 0px 50px;
+}
